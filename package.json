@@ -1,5 +1,5 @@
 {
-  "name": "pi-web-tools",
+  "name": "@edlsh/pi-web-tools",
   "version": "0.1.0",
   "description": "Multi-provider web search, extract, research, and code-search tools for Pi coding agent",
   "type": "module",
@@ -46,6 +46,7 @@
     "tool-contracts.ts",
     "tool-execution.ts",
     "tool-rendering.ts",
+    ".env.example",
     "README.md",
     "CHANGELOG.md"
   ],

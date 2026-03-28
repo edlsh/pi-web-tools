@@ -2,6 +2,7 @@
 
 Web search and retrieval tools for Pi coding agent with provider-aware routing across Exa, Jina, and Tavily.
 
+This package is published on npm as `@edlsh/pi-web-tools`.
 This package is a Pi extension package. It is not intended to be imported as a standalone general-purpose library.
 
 ## What it adds
@@ -25,6 +26,8 @@ Supported providers and API keys:
 - `JINA_API_KEY`
 - `TAVILY_API_KEY`
 
+A `.env.example` file in this repo documents the expected variables. The extension itself does not auto-load `.env`; export the values in your shell or use your own env-management tool.
+
 When `provider` is omitted, `web_search`, `web_extract`, and `web_research_start` auto-select the first configured compatible provider in this priority order:
 
 1. `exa`
@@ -36,7 +39,7 @@ When `provider` is omitted, `web_search`, `web_extract`, and `web_research_start
 ## Install
 
 ```bash
-pi install npm:pi-web-tools
+pi install npm:@edlsh/pi-web-tools
 ```
 
 Then restart Pi so it reloads extensions.
