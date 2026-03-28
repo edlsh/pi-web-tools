@@ -1,0 +1,63 @@
+{
+  "name": "pi-web-tools",
+  "version": "0.1.0",
+  "description": "Multi-provider web search, extract, research, and code-search tools for Pi coding agent",
+  "type": "module",
+  "author": "Enzo Lucchesi <enzo@edl.sh>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edlsh/pi-web-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edlsh/pi-web-tools/issues"
+  },
+  "homepage": "https://github.com/edlsh/pi-web-tools#readme",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "web",
+    "search",
+    "extract",
+    "research",
+    "exa",
+    "jina",
+    "tavily"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "exa.ts",
+    "jina.ts",
+    "tavily.ts",
+    "providers.ts",
+    "helpers.ts",
+    "previews.ts",
+    "types.ts",
+    "tool-contracts.ts",
+    "tool-execution.ts",
+    "tool-rendering.ts",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "pack:check": "npm pack --dry-run",
+    "check": "bun test && npm pack --dry-run"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  }
+}
